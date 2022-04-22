@@ -33,5 +33,19 @@ namespace WinFormsProgramName //Change this to match your projects namespace
             sqlDA.Update(dt); //Updates the data grid view if INSERT, UPDATE or DELETE statements were made
             return bSource; //returns the binding source object back to the form that called the method
         }
+
+        //Sample template
+        /*
+         TableConnector tableConn = new TableConnector();
+        
+         private void Form1_Load(object sender, EventArgs e)
+         {   
+             string sqlS1 = "SELECT * FROM Bolig";
+             dataGridView1.DataSource = tableConn.tableBinder(sqlS1);
+
+             string sqlS2 = "SELECT * FROM Kunde";
+             dataGridView2.DataSource = tableConn.tableBinder(sqlS2);
+         }
+         */
     }
 }
