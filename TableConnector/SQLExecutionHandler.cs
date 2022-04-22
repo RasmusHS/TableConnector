@@ -9,7 +9,7 @@ using System.Data;
 
 namespace WinFormsProgramName //Change this to match your projects namespace
 {
-    public class TableConnector
+    public class SQLExecutionHandler
     {
         private string strconn = @""; //Insert your connection string here
 
